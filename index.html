@@ -1,27 +1,55 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br" class="h-100">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Who Chat</title>
+    <link rel="icon" type="image/x-icon" href="/img/favicon.ico">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
     <link rel="stylesheet" href="style.css">
 </head>
-<body id="inicio">
-
-    <div class="header" id="header">
-        <div class=" row mb-5">
+<body id="inicio" class="text-white">
+    <div class="header ps-5 d-none d-lg-block">
+        <div class="row">
             <div class="col-3 d-flex align-items-center">
-                <img class="p-2" id="logo" src="img/logo.png">
-                <h2 class="mb-0 p-2" id="whochat">WhoChat</h2>
-
+                <img class="p-2" id="logo-pc" src="img/logo.png">
+                <h2 class="mb-0 p-2 whochat">WhoChat</h2>
             </div>
         </div>
     </div>
-    <div class="container">
-        <div class="row px-xl-5">
-            <div class="col-6 float-right">
-                <h1>BATE-PAPO AO VIVO SEM PRECISAR FAZER LOGIN</h1>
+    <div class="container-xl mt-4">
+        <div class="row row-cols-1 d-lg-none">
+            <div class="col d-flex justify-content-center my-2">
+                <h1 class="whochat" id="title-mobile">WhoChat</h1>
+            </div>
+            <div class="col d-flex justify-content-center ">
+                <img class="p-2" id="logo-celular" src="img/logo.png">
+            </div>
+
+        </div>
+            
+        
+        <div class="row px-xl-2 align-items-center d-none d-lg-flex">
+            <div class="col-6 pe-0 justify">
+                <h1 class="inika">BATE-PAPO AO VIVO SEM PRECISAR FAZER LOGIN</h1>
+                <h4 class="fw-normal mb-0 pe-4 inria">Participe de conversas para interagir com outros usuários e crie uma sala para 
+                    convidar seus amigos. Basta apenas fornecer o nome de usuário que deseja utilizar.</h4>
+            </div>
+            <div class="col-6 ps-0">
+                <img src="img/ilustracao.png" class="img-fluid px-4">
+            </div>
+        </div>
+        <div class="row justify-content-center mt-lg-5 pt-lg-5">
+            <div class="col-11 col-sm-8 col-lg-4">
+                <div class="input-group d-none d-lg-flex">
+                    <input type="text" id="input-pc" class="form-control input focus-ring" placeholder="Digite um apelido" style="--bs-focus-ring-color: rgba(0, 0, 0, 0)">
+                    <a href="salas.html" class="btn btn-yellow py-0"><i class="bi bi-arrow-right fs-4"></i></a>
+                </div>
+                    <form class="d-lg-none">
+                        <label for="input-mobile" class="form-label">Nome de usuário:</label>
+                        <input type="text" id="input-mobile" class="form-control input focus-ring border-none" placeholder="Digite um apelido" style="--bs-focus-ring-color: rgba(0, 0, 0, 0);">
+                        <a href="salas.html" class="btn text-white w-100 mt-3" id="botao-entrar">Entrar</a>
+                    </form>
             </div>
         </div>
     </div>
