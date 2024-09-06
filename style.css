@@ -1,0 +1,15 @@
+@import url('https://fonts.googleapis.com/css2?family=Jockey+One&display=swap');
+#inicio{
+    background: rgb(6,6,61);
+    background: linear-gradient(160deg, rgba(6,6,61,1) 25%, rgba(12,18,91,1) 76%, rgba(22,63,148,1) 100%);
+    overflow-x: hidden;
+}
+
+#logo{
+    height: 70px;
+}
+
+#whochat{
+    display: inline-block;
+    font-family: Jockey One;
+}
