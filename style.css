@@ -31,12 +31,17 @@ body{
 }
 .btn-yellow{
     background-color: #FFBE55;
+    height: 50px;
+    width: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 .btn-yellow:hover{
     background-color: #a87b33;
 }
 .input{
-    --bs-focus-ring-width:0 !important;
+    --bs-focus-ring-color: rgba(0, 0, 0, 0) !important;
 }
 #title-mobile{
     font-size: 50px;
@@ -44,12 +49,10 @@ body{
 #botao-entrar{
     background-color:#7600BA;
 }
-#salas{
+.dark-bg{
     background-color: #1E1E1E;
 }
-#bate-papo{
-    background-color: #1E1E1E;
-}
+
 
 #header{
     background-color: #2D0C40;
@@ -59,4 +62,11 @@ body{
 }
 .msg-p{
     background-color: #551978;
+}
+.bot{
+    position: absolute;
+    border: none;
+    bottom: 10px;
+    width: 96vw;
+    left: 2vw;
 }
