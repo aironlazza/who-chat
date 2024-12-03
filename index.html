@@ -45,12 +45,12 @@
             <div class="col-11 col-sm-8 col-lg-4" ng-controller="login">
                 <div class="input-group d-none d-lg-flex">
                     <input type="text" id="input-pc" class="form-control input focus-ring" placeholder="Digite um apelido" ng-model="nick" ng-keypress="enviarEnter($event)">
-                    <a href="#" class="btn btn-yellow py-0" ng-click="enviarNick()"><i class="bi bi-arrow-right fs-4"></i></a>
+                    <a href="#" class="btn btn-yellow py-0" ng-click="enviarNick($event)"><i class="bi bi-arrow-right fs-4"></i></a>
                 </div>
                     <form class="d-lg-none" name="nickMobile">
                         <label for="input-mobile" class="form-label">Nome de usuário:</label>
                         <input type="text" ng-model="nick" ng-keypress="enviarEnter($event)" id="input-mobile" class="form-control input focus-ring border-none" placeholder="Digite um apelido" style="--bs-focus-ring-color: rgba(0, 0, 0, 0);">
-                        <a href="#" class="btn text-white w-100 mt-3" id="botao-entrar" ng-click="enviarNick()">Entrar</a>
+                        <a href="#" class="btn text-white w-100 mt-3" id="botao-entrar" ng-click="enviarNick($event)">Entrar</a>
                     </form>
             </div>
         </div>

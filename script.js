@@ -1,15 +1,17 @@
 const app = angular.module("chatApi",[]);
+const url = "https://chat-api-roan.vercel.app/"
 
 app.controller('login',($scope, $http)=>{
   
-  $scope.enviarNick = function(){
+  $scope.enviarNick = function(evt){
+    evt.preventDefault();
     if($scope.nick.length<3){
       alert("O nick deve ter pelo menos 2 caracteres")
     }
     else{
       let req = {
         method:"POST",
-        url:"https://chat-api-roan.vercel.app/entrar",
+        url: url + "entrar",
         data:{ nick: $scope.nick }
       }
       $http(req).then((res)=>{
@@ -21,7 +23,7 @@ app.controller('login',($scope, $http)=>{
   $scope.enviarEnter = function(evt){
     if(evt.key=="Enter")
     {
-      $scope.enviarNick();
+      $scope.enviarNick(evt);
     }
   }
 
